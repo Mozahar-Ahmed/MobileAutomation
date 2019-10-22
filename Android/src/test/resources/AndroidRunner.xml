@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Android test suit for pages">
+
+
+    <parameter name="OS" value="Android"/>
+    <parameter name="deviceName" value="Galaxy J7 Pro"/>
+    <parameter name="version" value="9"/>
+    <parameter name="appiumPort" value="localhost:4723"/>
+
+    <test name="Home page" preserve-order="true">
+        <classes>
+            <class name="testTD.SmokeTest"/>
+        </classes>
+    </test>
+</suite>
