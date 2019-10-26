@@ -74,7 +74,7 @@ public class MobileAPI {
             cap.setCapability(MobileCapabilityType.APP_PACKAGE, "com.tdbank");
             cap.setCapability(MobileCapabilityType.APP_ACTIVITY, "com.td.dcts.android.us.app.SplashScreenActivity");
             if (appiumDriver == null) {
-                appiumDriver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), cap);
+                appiumDriver = new AndroidDriver(new URL("https://localhost:4723/wd/hub"), cap);
             }
         } else {
             cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, version);

@@ -17,12 +17,12 @@ public class SmokeTest extends MobileAPI {
         loginPage = PageFactory.initElements(appiumDriver, LoginPage.class);
     }
 
-    @Test(enabled = false)
+    @Test(enabled = true)
     public void testUI() {
         homePage.uiValidation();
     }
 
-    @Test
+    @Test(enabled = false)
     public void login() {
         homePage.clickOnAccount();
         loginPage.fillupData();

@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
-public class HomePage extends MobileAPI {
+public class HomePage extends MobileAPI {////android.widget.Button[@text='ACCOUNTS']
 @FindBy (xpath = "*//android.widget.Button[@text='ACCOUNTS']")
     WebElement accounts;
     @FindBy (xpath = "*//android.widget.Button[@text='TRANSFER']")
@@ -23,7 +23,6 @@ public class HomePage extends MobileAPI {
        softAssert.assertEquals(deposit.isDisplayed(), true,"deposit isn't displayed");
        softAssert.assertEquals(sendMoney.isDisplayed(), true,"send money isn't displayed");
        softAssert.assertAll();
-
    }
    public void clickOnAccount(){
        accounts.click();
