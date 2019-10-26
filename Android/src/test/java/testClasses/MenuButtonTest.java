@@ -1,4 +1,4 @@
-package testTD;
+package testClasses;
 
 import common.MobileAPI;
 import org.openqa.selenium.support.PageFactory;

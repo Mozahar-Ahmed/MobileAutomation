@@ -1,4 +1,4 @@
-package testTD;
+package testClasses;
 
 import common.MobileAPI;
 import org.openqa.selenium.support.PageFactory;
@@ -7,25 +7,25 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginPage;
 
-public class SmokeTest extends MobileAPI {
+public class LoginPageTest extends MobileAPI {
     HomePage homePage;
     LoginPage loginPage;
 
     @BeforeMethod
-    public void init() {
+    public void setLoginGate() {
         homePage = PageFactory.initElements(appiumDriver, HomePage.class);
         loginPage = PageFactory.initElements(appiumDriver, LoginPage.class);
     }
-
-    @Test(enabled = true)
-    public void testUI() {
-        homePage.uiValidation();
-    }
-
     @Test(enabled = false)
-    public void login() {
-        homePage.clickOnAccount();
-        loginPage.fillupData();
+    public void forgotPasswordFunctionality() {
+        homePage.clickOnAccounts();
+        loginPage.clickOnForgotPassword();
     }
-
+    @Test(enabled = true)
+    public void login() {
+        homePage.clickOnAccounts();
+        loginPage.typeUserName("demouser95");
+        loginPage.typePassword("abcd1234");
+        loginPage.clickOnLoginButton();
+    }
 }

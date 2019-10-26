@@ -60,7 +60,6 @@ public class MobileAPI {
 
     /*************** Reporting *****************/
 
-
     @Parameters({"OS", "deviceName", "version", "appiumPort"})
     @BeforeMethod
     public static AppiumDriver getDriver(String OS, String deviceName, String version,
