@@ -1,11 +1,11 @@
-package testClasses;
+package loginPageTest;
 
 import common.MobileAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.HomePage;
-import pages.LoginPage;
+import homePage.HomePage;
+import loginPage.LoginPage;
 
 public class LoginPageTest extends MobileAPI {
     HomePage homePage;

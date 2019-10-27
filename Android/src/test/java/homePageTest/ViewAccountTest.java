@@ -1,10 +1,10 @@
-package testClasses;
+package homePageTest;
 
 import common.MobileAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.ViewAccounts;
+import homePage.ViewAccounts;
 
 public class ViewAccountTest extends MobileAPI {
     ViewAccounts viewAccounts;
@@ -15,6 +15,7 @@ public class ViewAccountTest extends MobileAPI {
     @Test
     public void validateViewAccounts(){
         viewAccounts.validateViewAccounts();
+        viewAccounts.validateViewAccountsClickable();
     }
 
 }

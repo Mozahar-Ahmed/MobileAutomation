@@ -1,4 +1,4 @@
-package pages;
+package homePage;
 
 import common.MobileAPI;
 import org.openqa.selenium.WebElement;

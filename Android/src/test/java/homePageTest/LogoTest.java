@@ -1,10 +1,10 @@
-package testClasses;
+package homePageTest;
 
 import common.MobileAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.Logo;
+import homePage.Logo;
 
 public class LogoTest extends MobileAPI {
     Logo logo;

@@ -1,13 +1,10 @@
-package pages;
+package homePage;
 
-import common.MobileAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
-import javax.smartcardio.CommandAPDU;
-
-public class MenuButton extends MobileAPI {
+public class MenuButton {
     @FindBy(xpath = "//android.widget.ImageButton[@content-desc='Show Menu']")
     WebElement menubutton;
     public void validateMenuButton(){

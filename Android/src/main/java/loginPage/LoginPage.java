@@ -1,10 +1,9 @@
-package pages;
+package loginPage;
 
-import common.MobileAPI;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class LoginPage extends MobileAPI {
+public class LoginPage  {
     @FindBy(xpath = "//android.widget.EditText[@text='User name']")
     WebElement userName;
     @FindBy(xpath = "//android.widget.EditText[@text='Password']")

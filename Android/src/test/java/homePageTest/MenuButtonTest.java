@@ -1,10 +1,10 @@
-package testClasses;
+package homePageTest;
 
 import common.MobileAPI;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.MenuButton;
+import homePage.MenuButton;
 
 public class MenuButtonTest extends MobileAPI {
   MenuButton menuButton;
